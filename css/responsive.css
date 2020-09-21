@@ -55,6 +55,11 @@
   .main-container__form {
     width: 95%;
   }
+
+  .description__github-link,
+  .description__url-link {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 524px) {
