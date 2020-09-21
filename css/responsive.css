@@ -33,7 +33,7 @@
   /* About me section starts here */
   .main-container__intro-wrapper {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
   }
 
   .intro-wrapper__left,
