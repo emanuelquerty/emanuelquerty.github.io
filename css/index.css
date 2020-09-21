@@ -1,0 +1,448 @@
+/* This is the default theme  */
+
+:root {
+  --mainColor: #eaeaea;
+  --secondaryColor: #fff;
+
+  --borderColor: #c1c1c1;
+
+  --mainText: black;
+  --secondaryText: #4b5156;
+
+  --themeDotBorder: #24292e;
+
+  --previewBg: rgb(251, 249, 243, 0.8);
+  --previewShadow: #f0ead6;
+
+  --buttonColor: black;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: 0.3s;
+  background: var(--mainColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--mainText);
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: var(--secondaryText);
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 5.6rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainText);
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.first-section__main-container,
+.second-section__main-container,
+.third-section__main-container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+/************************************* Homepage Starts Here**********************************8*/
+
+.first-section {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+
+#greeting-wrapper__heading-1 {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.first-section__intro-wrapper {
+  background-color: var(--secondaryColor);
+  border-top: 1px solid var(--borderColor);
+  border-left: 1px solid var(--borderColor);
+  border-right: 1px solid var(--borderColor);
+  border-radius: 0.5rem;
+}
+
+.intro-wapper__nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.nav__dots-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+}
+
+.dots-wrapper__dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+.dots-wrapper__red-dot {
+  background-color: #fc6058;
+}
+
+.dots-wrapper__yellow-dot {
+  background-color: #fec02f;
+}
+
+.dots-wrapper__green-dot {
+  background-color: #2aca3e;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.links__link {
+  padding: 1rem;
+}
+
+.intro-wrapper__main-container {
+  display: flex;
+}
+
+.main-container__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding-top: 4rem;
+}
+
+.left__heading-4 {
+  margin-top: 3rem;
+}
+
+.left__themes-selectors {
+  margin: 3rem 0 2rem 0;
+  display: flex;
+}
+
+.themes-selectors__circle {
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid var(--borderColor);
+  border-radius: 50%;
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.themes-selectors__circle:hover,
+.themes-selectors__circle--active {
+  width: 5rem;
+  height: 5rem;
+  border: 0.3rem solid var(--borderColor);
+}
+
+#default {
+  background: #eaeaea;
+}
+#blue {
+  background: #15202b;
+}
+#green {
+  background: #606b56;
+}
+#purple {
+  background: #46344e;
+}
+
+.left__themes-selectors-disclaimer {
+  width: 20rem;
+  padding-bottom: 4rem;
+}
+
+.themes-selectors-disclaimer__paragraph {
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.main-container__right {
+  display: flex;
+  align-items: center;
+}
+
+.right__preview-shadow {
+  width: 30rem;
+  height: 20rem;
+  background: var(--previewShadow);
+  padding: 4rem 0 0 3rem;
+  position: relative;
+}
+
+.preview-shadow__transparent-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--previewBg);
+  border: 1.5px solid #17a2b8;
+  padding: 4rem 0 0 2rem;
+}
+
+.transparent-box__paragraph {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.corner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+
+#corner-br {
+  bottom: -5px;
+  right: -5px;
+}
+
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
+}
+
+/************************************* More About Me Page Starts Here**********************************8*/
+
+.second-section {
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+  padding-bottom: 4rem;
+}
+
+.main-container__intro-wrapper {
+  display: flex;
+}
+
+.intro-wrapper__left,
+.intro-wrapper__right {
+  width: 50%;
+}
+
+.left__heading-4 {
+  margin-top: 8rem;
+}
+
+.left__paragraph {
+  margin-top: 2rem;
+}
+
+.left__skills-container {
+  margin: 2rem 0;
+  background: var(--previewShadow);
+  display: flex;
+}
+
+.skills-container__left,
+.skills-container__right {
+  width: 50%;
+  padding: 2rem 4rem;
+}
+
+.intro-wrapper__right {
+  padding: 0 8rem;
+}
+
+.right__author-github-profile-image {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  margin-left: 2rem;
+}
+
+.right__heading-4 {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.right__social-media-link {
+  text-align: center;
+  margin-top: 2rem;
+  color: #2aca3e;
+  display: block;
+}
+
+.right__social-media-link:hover {
+  text-decoration: underline;
+}
+
+/******************* Portfolio (Projects) section starts here  **************************/
+
+.third-section {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+  padding-bottom: 4rem;
+}
+
+.third-section__main-container {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container__projects-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.projects-wrapper__project {
+  max-width: 35rem;
+  margin-right: 2rem;
+  background: #fff;
+  margin-bottom: 4rem;
+}
+
+.projects-wrapper__portfolio-page .project__image {
+  border: 1px solid var(--secondaryColor);
+}
+
+.project__image {
+  width: 100%;
+}
+
+.project__description {
+  padding: 1rem;
+}
+
+.description__heading-5,
+.description__paragraph {
+  color: #000;
+}
+
+.description__paragraph {
+  margin-top: 1rem;
+}
+
+.description__github-link,
+.description__url-link {
+  color: #2aca3e;
+  display: block;
+  font-size: 1.4rem;
+}
+
+.description__github-link {
+  margin-top: 2rem;
+}
+
+/******************************** Contacts section starts here ********************************/
+
+.forth-section {
+  background: var(--secondaryColor);
+  overflow: auto;
+  padding-bottom: 4rem;
+}
+
+.forth-section__main-container {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container__form {
+  width: 60rem;
+  background-color: var(--mainColor);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 1rem 1rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+}
+
+.forth-section input,
+.forth-section textarea,
+.forth-section button {
+  display: block;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  background: var(--secondaryColor);
+  border-radius: 0.4rem;
+  outline: none;
+  border: 1px solid var(--borderColor);
+}
+
+.forth-section button {
+  color: white;
+  background: var(--buttonColor);
+  border: none;
+  cursor: pointer;
+}
+
+.forth-section label {
+  font-size: 1.4rem;
+}

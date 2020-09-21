@@ -1,0 +1,78 @@
+@media screen and (max-width: 1200px) {
+  .first-section__main-container,
+  .second-section__main-container,
+  .third-section__main-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+}
+
+@media screen and (max-width: 740px) {
+  /* Homepage (first section) starts here */
+  .intro-wrapper__main-container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .main-container__right {
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 4rem;
+  }
+
+  .right__preview-shadow {
+    width: 40rem;
+  }
+
+  .main-container__left {
+    width: 100%;
+  }
+
+  /* About me section starts here */
+  .main-container__intro-wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .intro-wrapper__left,
+  .intro-wrapper__right {
+    width: 100%;
+  }
+
+  .right__author-github-profile-image {
+    margin-left: 0;
+  }
+
+  /* Portfolio starts here */
+  .projects-wrapper__project {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .main-container__form {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  #greeting-wrapper__heading-1 {
+    font-size: 4.6rem;
+  }
+
+  .right__preview-shadow {
+    width: 80%;
+  }
+
+  .intro-wrapper__right {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  html {
+    font-size: 8px;
+  }
+}
