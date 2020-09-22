@@ -15,9 +15,13 @@
     flex-wrap: wrap-reverse;
   }
 
+  .main-container__left,
+  .main-container__right {
+    width: 100%;
+  }
+
   .main-container__right {
     justify-content: center;
-    width: 100%;
     height: 30rem;
     margin-bottom: 4rem;
   }

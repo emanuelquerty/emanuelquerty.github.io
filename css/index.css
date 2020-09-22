@@ -166,7 +166,7 @@ a {
   padding-top: 4rem;
 }
 
-.left__heading-4 {
+.left__heading-3 {
   margin-top: 3rem;
 }
 
@@ -289,7 +289,7 @@ a {
   width: 50%;
 }
 
-.left__heading-4 {
+.left__heading-3 {
   margin-top: 8rem;
 }
 
@@ -320,7 +320,7 @@ a {
   margin-left: 2rem;
 }
 
-.right__heading-4 {
+.right__heading-3 {
   margin-top: 3rem;
   text-align: center;
 }
@@ -379,7 +379,7 @@ a {
   padding: 1rem;
 }
 
-.description__heading-5,
+.description__heading-4,
 .description__paragraph {
   color: #000;
 }
