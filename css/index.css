@@ -446,3 +446,51 @@ a {
 .forth-section label {
   font-size: 1.4rem;
 }
+
+.form__errors {
+  list-style: none;
+}
+
+.form__errors li {
+  font-size: 1.2rem;
+  color: #fc6058;
+}
+
+.form__success {
+  background-color: #689f38;
+  font-size: 1.4rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeOut 10s;
+  -webkit-animation: fadeOut 10s; /* Safari and Chrome */
+  -o-animation: fadeOut 10s; /* Opera */
+  opacity: 0;
+}
+
+.form__success p {
+  color: white;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
